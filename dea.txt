@@ -1,0 +1,4 @@
+python -m venv mari_venv instalar el entorno
+mari_venv\Script\Activate activarlo
+pip install flask instalar flask
+python.exe -m pip install --upgrade pip actualizar pip
