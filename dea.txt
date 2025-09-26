@@ -1,4 +1,31 @@
-python -m venv mari_venv instalar el entorno
-mari_venv\Script\Activate activarlo
+
+crear la carpeta del proyecto
+crear las carpetas templates y static
+luego
+python -m venv [nombre del entorno] instalar el entorno
+[nombre del entoron]\Scripts\Activate activarlo
 pip install flask instalar flask
+
 python.exe -m pip install --upgrade pip actualizar pip
+por defecto windows desactiva los scripts.
+luego crear un .py y poner esto
+
+'''
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/') #nombre de la ruta, inicio
+def hola_mundo(): #funcionalidad, funcion
+    return "<h1> Hola mundo desde flask</h1>"
+
+@app.route('/otra')
+def hola_mundo1():
+    return "<h1> Hola mundo desde otra ruta</h1>"
+
+if __name__  == "__main__":
+    app.run(debug=True)
+#cada ruta tiene su funcion
+'''
+luego escribir python [nombre de archivo.py]
+mejor buscar un apartado que ponga la version de python, al darle click sale un menu que pone como quieres correrlo, poner entorno virtual.
